@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "306696848709",
+    "project_id": "final-project-rent-motos",
+    "storage_bucket": "final-project-rent-motos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306696848709:android:19917a03ac43356ce76a2c",
+        "android_client_info": {
+          "package_name": "com.example.flutter_rent_moto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5M96eLip2AWIkyBL6bHDPfEWkefKks4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
