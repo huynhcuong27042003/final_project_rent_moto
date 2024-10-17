@@ -1,5 +1,4 @@
 import 'dart:ffi';
-
 import 'package:flutter_rent_moto/models/book_moto.dart';
 
 class Bill {

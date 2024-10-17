@@ -13,4 +13,22 @@ class Address {
         _city = city,
         _district = district,
         _ward = ward;
+
+  Map<String, dynamic> toJson() {
+    return {
+      'streetName': _streetName,
+      'city': _city,
+      'district': _district,
+      'ward': _ward,
+    };
+  }
+
+  factory Address.fromJson(Map<String, dynamic> json) {
+    return Address(
+      streetName: json['streetName'] as String,
+      city: json['city'] as String,
+      district: json['district'] as String,
+      ward: json['ward'] as String,
+    );
+  }
 }
