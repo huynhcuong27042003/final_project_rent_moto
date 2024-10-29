@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rent_moto/widgets/auth/sigunup_enter_code/signup_enter_code_body.dart';
-import 'package:flutter_rent_moto/widgets/auth/sigunup_enter_code/signup_enter_code_header.dart';
+import 'package:flutter_rent_moto/widgets/auth/signup/sigunup_enter_code/signup_enter_code_body.dart';
+import 'package:flutter_rent_moto/widgets/auth/signup/sigunup_enter_code/signup_enter_code_header.dart';
 
 class SignupEnterCodeScreen extends StatefulWidget {
   const SignupEnterCodeScreen({super.key});

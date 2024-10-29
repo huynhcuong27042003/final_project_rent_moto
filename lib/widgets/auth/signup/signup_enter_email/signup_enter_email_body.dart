@@ -27,11 +27,11 @@ class _SignupEnterEmailBodyState extends State<SignupEnterEmailBody> {
             controller: _controllerUserName,
             label: "Email",
             hintText: "Enter email",
-            icon: Icon(Icons.email_outlined),
+            icon: const Icon(Icons.email_outlined),
             validator: (value) {
               if (value == null || value.isEmpty) {
                 return 'Please enter email!';
-              } else if (!_validatorService.isValidEmail(value!)) {
+              } else if (!_validatorService.isValidEmail(value)) {
                 return 'Please enter a valid email';
               }
               return null;

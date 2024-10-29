@@ -58,7 +58,7 @@ class _SignupEnterCodeBodyState extends State<SignupEnterCodeBody> {
             controller: _controllerCode,
             label: "Verify Code",
             hintText: "Enter Code",
-            icon: Icon(Icons.verified),
+            icon: const Icon(Icons.verified),
             validator: (value) {
               if (value == null || value.isEmpty) {
                 return 'Please enter code!';
@@ -73,7 +73,7 @@ class _SignupEnterCodeBodyState extends State<SignupEnterCodeBody> {
             padding: const EdgeInsets.only(left: 10, top: 5, bottom: 15),
             child: Row(
               children: [
-                SizedBox(
+                const SizedBox(
                   width: 30,
                 ),
                 const Text(

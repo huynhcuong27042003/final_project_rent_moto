@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rent_moto/widgets/auth/signup/signup_enter_email/signup_enter_email_body.dart';
-import 'package:flutter_rent_moto/widgets/auth/signup/signup_enter_email/signup_enter_email_header.dart';
+import 'package:flutter_rent_moto/widgets/auth/signup/signup_enter_info/signup_enter_infor_body.dart';
+import 'package:flutter_rent_moto/widgets/auth/signup/signup_enter_info/signup_enter_infor_header.dart';
 
-class SignupEnterEmailScreen extends StatefulWidget {
-  const SignupEnterEmailScreen({super.key});
+class SignupEnterInfoScreen extends StatefulWidget {
+  const SignupEnterInfoScreen({super.key});
 
   @override
-  State<SignupEnterEmailScreen> createState() => _SignupEnterEmailScreenState();
+  State<SignupEnterInfoScreen> createState() => _SignupEnterInfoScreenState();
 }
 
-class _SignupEnterEmailScreenState extends State<SignupEnterEmailScreen> {
+class _SignupEnterInfoScreenState extends State<SignupEnterInfoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
         title: const Text(
-          'Step 1',
+          'Step 4',
           style: TextStyle(
               fontWeight: FontWeight.w700, color: Colors.white, fontSize: 30),
         ),
@@ -27,9 +27,9 @@ class _SignupEnterEmailScreenState extends State<SignupEnterEmailScreen> {
         children: [
           SizedBox(
             height: 150,
-            child: SignupEnterEmailHeader(),
+            child: SignupEnterInforHeader(),
           ),
-          SignupEnterEmailBody(),
+          SignupEnterInforBody(),
         ],
       ),
     );

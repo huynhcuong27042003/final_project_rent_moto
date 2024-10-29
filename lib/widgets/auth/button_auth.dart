@@ -9,7 +9,7 @@ class ButtonAuth extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 350,
-      padding: EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 20),
       decoration: BoxDecoration(
           gradient: const LinearGradient(
             colors: [

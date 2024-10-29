@@ -34,7 +34,7 @@ class _LoginFormState extends State<LoginForm> {
             validator: (value) {
               if (value == null || value.isEmpty) {
                 return 'Please enter email!';
-              } else if (!_validatorService.isValidEmail(value!)) {
+              } else if (!_validatorService.isValidEmail(value)) {
                 return 'Please enter a valid email';
               }
               return null;
@@ -50,7 +50,7 @@ class _LoginFormState extends State<LoginForm> {
             validator: (value) {
               if (value == null || value.isEmpty) {
                 return 'Please enter password!';
-              } else if (!_validatorService.isValidPassword(value!)) {
+              } else if (!_validatorService.isValidPassword(value)) {
                 return 'Password must be at least 8 characters, with uppercase, lowercase, and digits.';
               }
               return null;

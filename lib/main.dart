@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rent_moto/screens/auth/login/login_screen.dart';
+import 'package:flutter_rent_moto/screens/home/rent_home/rent_home_creen.dart';
+import 'package:flutter_rent_moto/widgets/modals/calendar_rental.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -15,8 +16,8 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: LoginScreen(),
+    return MaterialApp(
+      home: BookingScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rent_moto/widgets/auth/signup_enter_password/signup_enter_password_body.dart';
-import 'package:flutter_rent_moto/widgets/auth/signup_enter_password/signup_enter_password_header.dart';
+import 'package:flutter_rent_moto/widgets/auth/signup/signup_enter_password/signup_enter_password_body.dart';
+import 'package:flutter_rent_moto/widgets/auth/signup/signup_enter_password/signup_enter_password_header.dart';
 
 class SignupEnterPasswordScreen extends StatefulWidget {
   const SignupEnterPasswordScreen({super.key});

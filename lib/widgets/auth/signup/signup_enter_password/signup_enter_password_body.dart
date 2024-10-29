@@ -63,7 +63,7 @@ class _SignupEnterPasswordBodyState extends State<SignupEnterPasswordBody> {
             validator: (value) {
               if (value == null || value.isEmpty) {
                 return 'Please enter password!';
-              } else if (!_validatorService.isValidPassword(value!)) {
+              } else if (!_validatorService.isValidPassword(value)) {
                 return 'Password must be at least 8 characters, with uppercase, lowercase, and digits.';
               }
               return null;
@@ -86,7 +86,7 @@ class _SignupEnterPasswordBodyState extends State<SignupEnterPasswordBody> {
             validator: (value) {
               if (value == null || value.isEmpty) {
                 return 'Please enter password confirm!';
-              } else if (!_validatorService.isValidPassword(value!)) {
+              } else if (!_validatorService.isValidPassword(value)) {
                 return 'Password must be at least 8 characters, with uppercase, lowercase, and digits.';
               }
               return null;
