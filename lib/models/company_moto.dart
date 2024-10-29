@@ -1,11 +1,13 @@
 class CompanyMoto {
-  final String name;
-  final bool isHide;
+  final String _name;
+  final bool _isHide;
 
-  // Constructor với named parameters
-  CompanyMoto({required this.name, required this.isHide});
+  // Constructor with named parameters
+  CompanyMoto({required String name, required bool isHide}) 
+      : _name = name,
+        _isHide = isHide;
 
-  // Factory constructor để tạo object từ JSON
+  // Factory constructor to create object from JSON
   factory CompanyMoto.fromJson(Map<String, dynamic> json) {
     return CompanyMoto(
       name: json['name'],
@@ -13,11 +15,11 @@ class CompanyMoto {
     );
   }
 
-  // Phương thức chuyển object thành JSON
+  // Method to convert object to JSON
   Map<String, dynamic> toJson() {
     return {
-      'name': name,
-      'isHide': isHide,
+      'name': _name,
+      'isHide': _isHide,
     };
   }
 }
