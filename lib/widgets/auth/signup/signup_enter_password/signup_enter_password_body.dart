@@ -21,7 +21,6 @@ class _SignupEnterPasswordBodyState extends State<SignupEnterPasswordBody> {
   bool _obscureTextCF = true;
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     setState(() {
       _controllerUsername.text = 'huynhminhcuong.270403@gmail.com';

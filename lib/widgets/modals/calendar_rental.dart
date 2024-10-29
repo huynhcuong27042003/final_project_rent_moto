@@ -137,7 +137,7 @@ class _BookingScreenState extends State<BookingScreen>
         title: const Text("Thời gian"),
         bottom: TabBar(
           controller: _tabController,
-          tabs: [
+          tabs: const [
             Tab(text: "Thuê xe theo ngày"),
           ],
         ),

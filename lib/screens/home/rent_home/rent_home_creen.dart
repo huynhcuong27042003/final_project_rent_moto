@@ -15,8 +15,8 @@ class _RentHomeCreenState extends State<RentHomeCreen> {
     return  Scaffold(
       body: Stack(
         children: [
-          RentHomeBackground(),
-          RentHomeSearchMotos(),
+          const RentHomeBackground(),
+          const RentHomeSearchMotos(),
           Container(
             
           )

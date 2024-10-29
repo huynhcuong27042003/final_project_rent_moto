@@ -1,28 +1,60 @@
-import 'dart:ffi';
-
-import 'package:flutter/foundation.dart';
+import 'package:flutter_rent_moto/models/category_moto.dart';
 import 'package:flutter_rent_moto/models/company_moto.dart';
 import 'package:flutter_rent_moto/models/imformation_moto.dart';
 
-class Motos {
+
+class Motorcycle {
   final String _numberPlate;
   final CompanyMoto _companyMoto;
-  final Category _category;
-  final ImformationMoto _imformationMoto;
-  final Bool _isActive;
-  final Bool _isHide;
+  final CategoryMoto _category; // Using CategoryMoto here
+  final InformationMoto _informationMoto; // Assuming this is a corrected version of ImformationMoto
+  final bool _isActive;
+  final bool _isHide;
 
-  Motos(
-      {required String numberPlate,
-      required CompanyMoto companyMoto,
-      required Category category,
-      required ImformationMoto imformationMoto,
-      required Bool isActive,
-      required Bool isHide})
-      : _numberPlate = numberPlate,
+  // Constructor with named parameters
+  Motorcycle({
+    required String numberPlate,
+    required CompanyMoto companyMoto,
+    required CategoryMoto category,
+    required InformationMoto informationMoto,
+    required bool isActive,
+    required bool isHide,
+  })  : _numberPlate = numberPlate,
         _companyMoto = companyMoto,
         _category = category,
-        _imformationMoto = imformationMoto,
+        _informationMoto = informationMoto,
         _isActive = isActive,
         _isHide = isHide;
+
+  // Getters to access private properties
+  String get numberPlate => _numberPlate;
+  CompanyMoto get companyMoto => _companyMoto;
+  CategoryMoto get category => _category;
+  InformationMoto get informationMoto => _informationMoto;
+  bool get isActive => _isActive;
+  bool get isHide => _isHide;
+
+  // Factory constructor for JSON deserialization
+  factory Motorcycle.fromJson(Map<String, dynamic> json) {
+    return Motorcycle(
+      numberPlate: json['numberPlate'] ?? '',
+      companyMoto: CompanyMoto.fromJson(json['companyMoto']),
+      category: CategoryMoto.fromJson(json['category']),
+      informationMoto: InformationMoto.fromJson(json['informationMoto']),
+      isActive: json['isActive'] ?? false,
+      isHide: json['isHide'] ?? false,
+    );
+  }
+
+  // Method to convert object to JSON
+  Map<String, dynamic> toJson() {
+    return {
+      'numberPlate': _numberPlate,
+      'companyMoto': _companyMoto.toJson(),
+      'category': _category.toJson(),
+      'informationMoto': _informationMoto.toJson(),
+      'isActive': _isActive,
+      'isHide': _isHide,
+    };
+  }
 }

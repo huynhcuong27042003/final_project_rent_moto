@@ -1,5 +1,6 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
-import 'package:flutter_rent_moto/screens/home/rent_home/rent_home_creen.dart';
 import 'package:flutter_rent_moto/widgets/modals/calendar_rental.dart';
 
 void main() async {
@@ -16,7 +17,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: BookingScreen(),
       debugShowCheckedModeBanner: false,
     );

@@ -20,7 +20,6 @@ class _SignupEnterCodeBodyState extends State<SignupEnterCodeBody> {
   Timer? _timer;
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     startTimer();
   }

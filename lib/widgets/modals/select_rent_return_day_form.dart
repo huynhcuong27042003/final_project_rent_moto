@@ -140,7 +140,7 @@ class _SelectRentReturnDayFormState extends State<SelectRentReturnDayForm> {
           Container(
             height: 40,
             width: 450,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Color(0xFFFFAD15),
             ),
             child: TextButton(
